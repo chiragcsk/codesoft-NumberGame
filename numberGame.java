@@ -7,7 +7,7 @@ public class numberGame{
         Random rand = new Random();
 
         int score = 0;
-        String playAgain = "ye7s";
+        String playAgain = "yes";
 
         while (playAgain.equals("yes")) {
             int randomNumber = rand.nextInt(100) + 1; // random number between 1-100
