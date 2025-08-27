@@ -10,7 +10,7 @@ public class numberGame{
         String playAgain = "yes";
 
         while (playAgain.equals("yes")) {
-            int randomNumber = rand.nextInt(100) + 1; // random number between 1-100
+            int randomNumber = rand.nextInt(100) + 1;
             int tryCount = 0;
             int maxTries = 10;
             boolean guessed = false;
@@ -25,7 +25,7 @@ public class numberGame{
                 tryCount++;
 
                 if (playerGuess == randomNumber) {
-                    System.out.println("✅ Correct! You win!");
+                    System.out.println(" Correct! You win!");
                     System.out.println("You took " + tryCount + " tries.");
                     score += (maxTries - tryCount + 1); // higher score if guessed earlier
                     guessed = true;
@@ -38,7 +38,7 @@ public class numberGame{
             }
 
             if (!guessed) {
-                System.out.println("❌ Out of tries! The number was: " + randomNumber);
+                System.out.println(" Out of tries! The number was: " + randomNumber);
             }
 
             System.out.println("Current Score: " + score);
